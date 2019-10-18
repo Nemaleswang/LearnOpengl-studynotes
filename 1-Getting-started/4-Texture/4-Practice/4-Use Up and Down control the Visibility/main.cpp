@@ -211,7 +211,7 @@ void processInput(GLFWwindow *window)
 		if (mixValue >= 1.0f) mixValue = 1.0f;
 	}
 	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS){
-		mixValue -= 0.001f;
+		mixValue -= 0.01f;
 		if (mixValue <= 0.0f) mixValue = 0.0f;
 	}
 }
